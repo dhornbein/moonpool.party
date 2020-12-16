@@ -25,10 +25,15 @@
 <main>
     <header>
         <section class="banner">
-            <h1>
+            <h1 class="hide">
                 <small>WANING</small>🌗<br>
                 <strong>MOON</strong>🌘<br>
                 <strong>POOL</strong>🌑
+            </h1>
+            <h1>
+                <small>WAXING</small>🌓<br>
+                <strong>MOON</strong>🌔<br>
+                <strong>POOL</strong>🌕
             </h1>
             <section>
                 <p class="time">
@@ -38,12 +43,12 @@
     
                     <abbr title="Mountain Standard Time">MST</abbr></p>
                 <p class="date">
-                    <time>DEC 7<sup>th</sup></time>
+                    <time>DEC 21<sup>st</sup></time>
                     &ndash;
-                    <time>11<sup>th</sup></time>
+                    <time>25<sup>th</sup></time>
                 </p>
                 <p>
-                    <small><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=Mm85Mm5jcXVsZDgxZzc4MmFsajNxdXAxN3BfMjAyMDEyMDdUMTUwMDAwWiBkcmV3QGRob3JuYmVpbi5jb20&tmsrc=drew%40dhornbein.com">Add to Google Calendar</a></small>
+                    <small><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MDRrbm42OGIzN25hYW11MDVtYzQ3bHJvY3BfMjAyMDEyMjFUMTUwMDAwWiBkcmV3QGRob3JuYmVpbi5jb20&tmsrc=drew%40dhornbein.com&scp=ALL">Add to Google Calendar</a></small>
                 </p>
             </section>
             <section class="join">
@@ -153,9 +158,9 @@
     <aside>
         <h1>Share</h1>
         <p>You are invited to share this with your friends and comrades.</p>
-        <label for="">
+        <label class="moonpoolurl" for="moonurl">
             Share this URL:
-            <input type="text" readonly="readonly" value="https://moonpool.party" onfocus="this.select();" onmouseup="return false;">
+            <input name="moonurl" type="text" readonly="readonly" value="https://moonpool.party" onfocus="this.select();" onmouseup="return false;">
         </label>
         <p>Share this image:</p>
         <img src="share.jpg" alt="" width="400">
