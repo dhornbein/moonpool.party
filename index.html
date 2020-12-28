@@ -23,7 +23,7 @@
 </head>
 <body>
 <main>
-    <header>
+    <header class="hide">
         <section class="banner">
             <h1 class="hide">
                 <small>WANING</small>🌗<br>
@@ -63,6 +63,9 @@
                 <button><a href="offerings" class="button">View Offerings</a></button>
             </section>
         </section>
+    </header>
+    <header>
+        <h1>Coming back soon...</h1>
     </header>
     <article>
         <p>
@@ -162,10 +165,12 @@
             Share this URL:
             <input name="moonurl" type="text" readonly="readonly" value="https://moonpool.party" onfocus="this.select();" onmouseup="return false;">
         </label>
-        <p>Share this image:</p>
-        <img src="share.jpg" alt="" width="400">
-        <p>Or this image:</p>
-        <img src="share2.jpg" alt="" width="400">
+        <div class="hide">
+            <p>Share this image:</p>
+            <img src="share.jpg" alt="" width="400">
+            <p>Or this image:</p>
+            <img src="share2.jpg" alt="" width="400">
+        </div>
     </aside>
 </main>
 </body>
