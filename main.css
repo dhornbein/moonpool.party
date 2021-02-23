@@ -21,6 +21,8 @@
   --variable: #d941e2;
   --highlight: #efdb43;
   --select-arrow: svg-load('./assets/select-arrow.svg', fill: #efefef);
+
+  --purple: #8F25AB;
 }
 
 .hide {
@@ -46,6 +48,10 @@ button.is-large {
     font-size: 2em;
 }
 
+button.is-large:hover {
+    background-color: var(--button-hover);
+}
+
 .banner {
     text-align: center;
 }
@@ -63,12 +69,60 @@ button.is-large {
     width:100%;
 }
 
-
-/* body {
-    background: black url(https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.8070.jpg) right top no-repeat fixed;
+.form-is-inline {
+    display: flex;
+    flex: 0 1 auto;
 }
 
-main {
-    background-color: #000d;
-    padding: 1em;
-} */
+.form-is-inline input[type=email] {
+    flex: 1 1 55ch;
+}
+
+.email-form input[type=submit] {
+    background-color: var(--selection);
+}
+
+/* CALENDAR */
+
+details tbody tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+.fc-theme-standard .fc-scrollgrid,
+.fc-theme-standard td, .fc-theme-standard th {
+    border: none;
+}
+
+.fc-h-event.moon-event {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+.fc-daygrid-dot-event.moon-event {
+    color: var(--text-main);
+}
+
+.fc-daygrid-dot-event.moon-event .fc-event-title {
+    display: none;
+}
+
+.moon-event .fc-daygrid-event-dot {
+    border-color: var(--purple);
+}
+
+.fc .fc-daygrid-day-top {
+    display: flex;
+    justify-content: center;
+}
+
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    min-height: auto;
+}
+
+.fc .fc-day-today .fc-daygrid-day-top a {
+    color: var(--text-muted);
+}
+
+.fc .fc-day-past .fc-daygrid-day-top {
+    opacity: .6;
+}

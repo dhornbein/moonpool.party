@@ -18,8 +18,13 @@
     <link rel="stylesheet" href="normalize.css" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/wingcss" /> -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.css"
+        integrity="sha256-ejA/z0dc7D+StbJL/0HAnRG/Xae3yS2gzg0OAnIURC4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
     <link rel="stylesheet" href="main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <main>
@@ -65,7 +70,7 @@
         </section>
     </header>
     <header>
-        <h1>Coming back soon...</h1>
+        <h1>M🌕🌕N P🌑🌑L</h1>
     </header>
     <article>
         <p>
@@ -79,19 +84,47 @@
         </p>
         
         <p>
-            The main room is a quite focused space where you and others will sit in focused silence. Breakout rooms will be
+            The main room is a quite focused space where you and others will be in focused silence. Breakout rooms will be
             available for all other manner of offerings.
         </p>
-        
+
         <p>
-            Anyone is welcome to join, anyone is welcome to <a href="offer" target="_blank">make offerings</a>.
+            Moon Pool wants to know how best to serve you, please fill out the survey.
         </p>
+
+        <p><button class="is-large"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMoCsgCql-KL70zhJsXvmnyf67YfDAp9mDBi-SpIFlKlWhTQ/viewform">📃 Fill out the Survey</a></button></p>
+
+        
+
+        
+        <fieldset>
+            <legend><h2>Subscribe to Join</h2></legend>
+                <form action="https://buttondown.email/api/emails/embed-subscribe/dddrew" method="post" target="popupwindow"
+                onsubmit="window.open('https://buttondown.email/dddrew', 'popupwindow')" class="email-form">
+                <label for="bd-email">Enter your email</label>
+                <div class="form-is-inline">
+                    <input type="email" name="email" id="bd-email" />
+                    <input type="submit" value="Subscribe" />
+                </div>
+                <input type="hidden" value="1" name="embed" />
+                <input type="hidden" name="tag" value="Moon Pool" />
+            </form>
+        </fieldset>
+        
+        <!-- <p>
+            Anyone is welcome to join, anyone is welcome to <a href="offer" target="_blank">make offerings</a>.
+        </p> -->
+
+        <details id="calendarDetails" open>
+            <summary>Calendar</summary>
+            <div id="calendar"></div>
+        </details>
 
         <details>
             <summary>How it Works</summary>
             <p>
-                Typically Moon Pools take place on weekdays from 8 AM — 11 AM Mountain Time. Each daily session consists of three
-                sessions.
+                Moon Pools take place on weekdays 3 Hours (tradionally 8 am - 11 am, but this might change). Each daily session consists of three
+                sprints.
             </p>
             
             <h2>Daily Flow</h2>
@@ -103,8 +136,7 @@
             
             <p>
                 Each sprint will be about 40-50 minutes, this is your time to focus on what matters. Breakout rooms are available
-                for
-                any small groups that want to form or session offerings.
+                for any small groups that want to form or session offerings.
             </p>
             
             <p>
@@ -147,7 +179,7 @@
                 an opening, closing, or break (~10 min)
             </p>
 
-            <button><a href="offer" class="button">Add your offering here</a></button>
+            <a href="mailto:moon@dhornbein.com">Email Drew at moon@dhornbein.com</a>
         </details>
 
         <p>
