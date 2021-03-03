@@ -62,6 +62,7 @@ button.is-large:hover {
     border-color: var(--border);
     margin: 1em 0;
     padding: 1em 0;
+    text-align: center;
 }
 
 .moonpoolurl,
