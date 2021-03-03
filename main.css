@@ -52,6 +52,10 @@ button.is-large:hover {
     background-color: var(--button-hover);
 }
 
+button.is-primary {
+    background-color: var(--links);
+}
+
 .banner {
     text-align: center;
 }
